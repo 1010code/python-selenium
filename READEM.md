@@ -4,6 +4,9 @@
 
 透過 Python 自動化工具 Selenium 來完成爬蟲。
 
+此範例爬取衛星雲圖資料，透過爬蟲模擬下載圖片。
+- https://meteologix.com/tw/satellite/taiwan/satellite-water-vapor-10min/20200926-0740z.html
+
 ## 安裝Selenium
 ```
 pip install selenium
@@ -26,4 +29,19 @@ yearList=[2020]
 monthList=[1,2,3,4,5,6,7,8]
 # 每月有幾天
 dayList=[31,28,31,30,31,30,31,31] 
+```
+
+## 設定下載類別
+
+```py
+# 三種不同衛星圖
+# satellite-hd-10min、top-alert-10min、satellite-water-vapor-10min
+mode= 'satellite-hd-10min'
+```
+
+## Running the Project
+After completing the installation step and config setting, you're ready to start the project.
+
+```bash
+python helper.py
 ```
