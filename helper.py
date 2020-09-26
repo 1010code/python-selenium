@@ -1,6 +1,10 @@
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import time
+from datetime import datetime
+
+# 記錄開始時間
+start_time = datetime.now()
 
 # 自定義函式，小於10的數字補0 ex: 3 -> 03
 """
@@ -63,3 +67,8 @@ for i in queryList:
     # click download image by xpath
     browser.find_element_by_xpath('/html/body/div[1]/div/div[6]/div/div[1]/div/div/div[1]/div[1]/div[3]/div[1]/div[1]/div/div/ul/li[3]/span[2]').click() 
     print(str(i), ' done!')
+
+
+# 總結執行時間
+end_time = datetime.now()
+print('Duration: {}'.format(end_time - start_time))
