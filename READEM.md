@@ -1,5 +1,7 @@
 # Python Selenium 自動化爬取大量圖片
 
+![](./screenshot/demo.gif)
+
 透過 Python 自動化工具 Selenium 來完成爬蟲。
 
 ## 安裝Selenium
