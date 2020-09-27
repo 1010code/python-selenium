@@ -22,7 +22,8 @@ def formatNumber(num):
 # 載入瀏覽器驅動，以 Chrome 為例。請下載與電腦所安裝的瀏覽器版本相同的對應驅動。
 # Download source: https://chromedriver.chromium.org/downloads
 browser = webdriver.Chrome('./chromedriver')
-
+# set windows size
+browser.set_window_size(1024, 768)
 # 首次開啟網頁時需要點選 Accept 按鈕，因此透過 flag 變數來判斷是否首次執行。
 flag=0
 
